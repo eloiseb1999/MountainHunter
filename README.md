@@ -1,4 +1,4 @@
-# Mountain Hunter
+# Mountain Shooter
 
 <p align="center">
   <img src="./asset/Player2.png" width="300">
