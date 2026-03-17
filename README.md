@@ -33,7 +33,3 @@ pip install pygame
 Run the game:
 
 python main.py
-
-## Author
-
-Developed by Eloise.
