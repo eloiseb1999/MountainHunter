@@ -1,7 +1,7 @@
 # Mountain Hunter
 
 <p align="center">
-  <img src="./asset/MH1.png" width="600">
+  <img src="./asset/Player2.png" width="600">
 </p>
 
 Mountain Hunter is a pixel-art 2D shooter developed with Python and Pygame.  
@@ -35,10 +35,9 @@ The game features a parallax scrolling background, multiple gameplay modes, and 
 - Mediator Pattern
 - Proxy Pattern
 
+
 ## How to Run
 
-Clone the repository:
-
-```bash
-git clone https://github.com/eloiseb1999/MountainHunter.git
-cd MountainHunter
+To run the game, first verify that Python is installed using `python --version`.  
+Then clone the repository with `git clone https://github.com/eloiseb1999/MountainHunter.git` and enter the folder using `cd MountainHunter`.  
+Install the dependencies with `pip install -r requirements.txt` and run the game with `python main.py`.
