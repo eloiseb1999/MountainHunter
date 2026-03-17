@@ -21,14 +21,16 @@ class Level:
         self.game_mode = game_mode
         self.entity_list: list[Entity] = []
         self.entity_list.extend(EntityFactory.get_entity(self.name.replace(' ', '') + 'Bg'))
-        player = (EntityFactory.get_entity('Player1'))
-        player.score = player_score
+
+        player = EntityFactory.get_entity('Player1')
+        player.score = player_score[0]
         self.entity_list.append(player)
+
         if game_mode in [MENU_OPTION[1], MENU_OPTION[2]]:
-            player = (EntityFactory.get_entity('Player2'))
+            player = EntityFactory.get_entity('Player2')
             player.score = player_score[1]
             self.entity_list.append(player)
-            self.entity_list.append(EntityFactory.get_entity('Player2'))
+
         pygame.time.set_timer(EVENT_ENEMY, SPAWN_TIME)
         pygame.time.set_timer(EVENT_TIMEOUT, TIMEOUT_STEP)
 
@@ -51,7 +53,7 @@ class Level:
                     self.timeout -= TIMEOUT_STEP
                     if self.timeout == 0:
                         for ent in self.entity_list:
-                            if isinstance(ent, Player)  and ent.name == 'Player1':
+                            if isinstance(ent, Player) and ent.name == 'Player1':
                                 player_score[0] = ent.score
                             if isinstance(ent, Player) and ent.name == 'Player2':
                                 player_score[1] = ent.score
