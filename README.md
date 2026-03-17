@@ -1,7 +1,7 @@
 # Mountain Hunter
 
 <p align="center">
-  <img src="./asset/Player2.png" width="600">
+  <img src="./asset/Player2.png" width="300">
 </p>
 
 Mountain Hunter is a pixel-art 2D shooter developed with Python and Pygame.  
