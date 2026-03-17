@@ -7,8 +7,7 @@ The game features a parallax scrolling background, multiple gameplay modes, and 
 
 - Pixel art graphics
 - Parallax scrolling effect
-- Multiple game modes (Single Player, Coop, Versus)
-- Enemy AI system
+- Multiple game modes (Single Player, Coop, Competitive)
 - Player shooting mechanics
 - Score saving system
 - Top 10 leaderboard
